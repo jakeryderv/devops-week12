@@ -4,6 +4,10 @@ The lab was executed on November 23, 2026 (America/Chicago). Terminal images
 capture actual command output, with lengthy plans reduced to their resource
 actions and totals. Browser images capture the running portal and Adminer.
 
+Repository: <https://github.com/jakeryderv/devops-week12>
+
+Final pull request: <https://github.com/jakeryderv/devops-week12/pull/2>
+
 | Milestone | Screenshot | Observed result |
 | --- | --- | --- |
 | 1. Tools | [01-tools.png](01-tools.png) | OpenTofu 1.13.9 and Docker client/server 29.10.0 |

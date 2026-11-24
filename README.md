@@ -97,6 +97,7 @@ URLs require applying the configuration again.
 ## Submission
 
 - [GitHub issue](https://github.com/jakeryderv/devops-week12/issues/1)
+- [Final pull request](https://github.com/jakeryderv/devops-week12/pull/2)
 - [Evidence and results](evidence/README.md)
 - [Reflection](docs/reflection.md)
 - [Original assignment](docs/Week12_Individual_Exercise.docx)
