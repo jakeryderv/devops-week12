@@ -15,10 +15,15 @@ Use a `docker_container` resource with:
 - `image = docker_image.postgres.image_id`
 - an `env` set containing `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD`
 - `networks_advanced` referencing `docker_network.lab.name`
-- a `volumes` block mounting the named volume to `/var/lib/postgresql/data`
+- a `volumes` block mounting the named volume to `/var/lib/postgresql`
 - `restart = "unless-stopped"`
 
 A Docker container on a user-defined network can be reached by its container name. Give the database container an easy-to-recognize name such as `${local.prefix}-db`.
+
+PostgreSQL 18 uses `/var/lib/postgresql/18/docker` as its default data directory.
+The original starter's `/var/lib/postgresql/data` mount applies to older images;
+mount the parent `/var/lib/postgresql` for this assignment's PostgreSQL 18 image.
+See the [official image documentation](https://hub.docker.com/_/postgres#pgdata).
 
 ## Adminer image
 Use `adminer:5.5.1` with `keep_locally = true`.
